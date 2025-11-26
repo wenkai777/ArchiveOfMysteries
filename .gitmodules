@@ -1,0 +1,3 @@
+[submodule "themes/type-writer"]
+	path = themes/type-writer
+	url = https://github.com/math-queiroz/rusty-typewriter.git
