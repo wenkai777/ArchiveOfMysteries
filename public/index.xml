@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Archive Of Mysteries</title>
-    <link>http://localhost:1313/</link>
+    <link>https://example.org/</link>
     <description>Recent content on Archive Of Mysteries</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 25 Nov 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Flare.io CTF-1: Knights of the Stolen Session</title>
-      <link>http://localhost:1313/posts/z-flare-ctf/</link>
+      <link>https://example.org/posts/z-flare-ctf/</link>
       <pubDate>Tue, 25 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/z-flare-ctf/</guid>
+      <guid>https://example.org/posts/z-flare-ctf/</guid>
       <description>&lt;p&gt;Flare.io is hosting a CTF in which they release 1 challenge a week for the next 6 weeks. The theme is medieval which I love. I&amp;rsquo;m a big fan of games like &lt;em&gt;elden ring&lt;/em&gt; and &lt;em&gt;dark souls&lt;/em&gt;, in otherwords anything with knights, mages, dragons, etc. It&amp;rsquo;s a very pleasing aesthetic in my opinion. This write-up is about this week&amp;rsquo;s challenge, the first of six.&lt;/p&gt;&#xA;&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;The challenge is titled &amp;lsquo;Knights of the Stolen Session&amp;rsquo; and all that is given is a GitHub profile with one repository of a d20 simulator.&lt;/p&gt;</description>
     </item>
     <item>
       <title>BrainFuck CTF - 11 Write-ups</title>
-      <link>http://localhost:1313/posts/z-brainfuck-ctf/</link>
+      <link>https://example.org/posts/z-brainfuck-ctf/</link>
       <pubDate>Mon, 20 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/z-brainfuck-ctf/</guid>
-      <description>&lt;p&gt;At this year&amp;rsquo;s Hackfest, my teammate Marzzeau and I attempted the BrainFuck CTF, as it is described on their website it&amp;rsquo;s a serie of unconventional puzzles that requires logic, cryptography, OSINT and linguistics.&lt;/p&gt;&#xA;&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;Here are our credentials for this CTF:&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/bf-ctf-25/bf_scoreboard.webp&#34;&#xA;    alt=&#34;scoreboard&#34; width=&#34;600px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;See table of content to access a specific challenge faster&lt;/p&gt;&#xA;&lt;h3 id=&#34;snake&#34;&gt;Snake&lt;/h3&gt;&#xA;&lt;p&gt;Description: No information provided&lt;/p&gt;&#xA;&lt;p&gt;This was personally my favourite puzzle, on hackfest&amp;rsquo;s twitter page we found this:&lt;/p&gt;</description>
+      <guid>https://example.org/posts/z-brainfuck-ctf/</guid>
+      <description>&lt;p&gt;At this year&amp;rsquo;s Hackfest, my teammate Marzzeau and I attempted the BrainFuck CTF, as it is described on their website it&amp;rsquo;s a serie of unconventional puzzles that requires logic, cryptography, OSINT and linguistics.&lt;/p&gt;&#xA;&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;Here are our credentials for this CTF:&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;https://example.org/images/bf-ctf-25/bf_scoreboard.webp&#34;&#xA;    alt=&#34;scoreboard&#34; width=&#34;600px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;See table of content to access a specific challenge faster&lt;/p&gt;&#xA;&lt;h3 id=&#34;snake&#34;&gt;Snake&lt;/h3&gt;&#xA;&lt;p&gt;Description: No information provided&lt;/p&gt;&#xA;&lt;p&gt;This was personally my favourite puzzle, on hackfest&amp;rsquo;s twitter page we found this:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Chapter 1: Gambit of the fool</title>
-      <link>http://localhost:1313/posts/zz-chapter-1/</link>
+      <link>https://example.org/posts/zz-chapter-1/</link>
       <pubDate>Fri, 03 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/zz-chapter-1/</guid>
+      <guid>https://example.org/posts/zz-chapter-1/</guid>
       <description>&lt;h2 id=&#34;youve-found-me&#34;&gt;You&amp;rsquo;ve found me!&lt;/h2&gt;&#xA;&lt;p&gt;Hey there! welcome!&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;m excited to start this journey, in all honesty this blog is mostly a way for me to take initiative and finally do the things I&amp;rsquo;ve been procrascinating on. Regardless of how you&amp;rsquo;ve stumbled upon my blog, by accident or on purpose, I&amp;rsquo;m glad you are here, and I hope you enjoy the stay.&lt;/p&gt;&#xA;&lt;h2 id=&#34;i-me-yes-me&#34;&gt;I, Me, yes me&lt;/h2&gt;&#xA;&lt;p&gt;I go by the name of &lt;em&gt;&lt;strong&gt;Kaisor&lt;/strong&gt;&lt;/em&gt;. I&amp;rsquo;m a cybersecurity enthusiast and as some might be able to tell with the subtle references all over the place, I love Lord Of The Mysteries, greatest piece of fiction to have touched earth. My interest in cybersecurity is broad, and I&amp;rsquo;m still exploring which field to dive into. One field I&amp;rsquo;d say really caught my eye would be physical pen testing, but from my conversations with experts at conferences it seems like a hard domain to get into and hard to gain &lt;strong&gt;legal&lt;/strong&gt; experience&amp;hellip; That being said, I&amp;rsquo;m probably more inclined towards red teaming. I plan to explore different paths and document along the way.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Contact</title>
-      <link>http://localhost:1313/contact/</link>
+      <link>https://example.org/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/contact/</guid>
+      <guid>https://example.org/contact/</guid>
       <description>&lt;h1 id=&#34;contact-me&#34;&gt;Contact Me&lt;/h1&gt;&#xA;&lt;p&gt;Hey there! Don&amp;rsquo;t hesitate to reach out, whether it&amp;rsquo;s collaboration, a chat about a project or just to say hi.&lt;/p&gt;&#xA;&lt;p&gt;&amp;mdash;&amp;mdash; &lt;a href=&#34;https://www.linkedin.com/in/kevin-wu-tech-it/&#34;&gt;LinkedIn&lt;/a&gt; &amp;mdash;&amp;mdash;&lt;/p&gt;&#xA;&lt;p&gt;Thanks for stopping by!&lt;/p&gt;</description>
     </item>
   </channel>

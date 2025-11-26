@@ -2,53 +2,53 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://example.org/</loc>
     <lastmod>2025-11-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/ctf/</loc>
+    <loc>https://example.org/tags/ctf/</loc>
     <lastmod>2025-11-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/flare/</loc>
+    <loc>https://example.org/tags/flare/</loc>
     <lastmod>2025-11-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/z-flare-ctf/</loc>
+    <loc>https://example.org/posts/z-flare-ctf/</loc>
     <lastmod>2025-11-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/forensics/</loc>
+    <loc>https://example.org/tags/forensics/</loc>
     <lastmod>2025-11-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/git/</loc>
+    <loc>https://example.org/tags/git/</loc>
     <lastmod>2025-11-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/osint/</loc>
+    <loc>https://example.org/tags/osint/</loc>
     <lastmod>2025-11-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>https://example.org/posts/</loc>
     <lastmod>2025-11-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://example.org/tags/</loc>
     <lastmod>2025-11-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/write-up/</loc>
+    <loc>https://example.org/tags/write-up/</loc>
     <lastmod>2025-11-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/z-brainfuck-ctf/</loc>
+    <loc>https://example.org/posts/z-brainfuck-ctf/</loc>
     <lastmod>2025-10-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/cryptography/</loc>
+    <loc>https://example.org/tags/cryptography/</loc>
     <lastmod>2025-10-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/hackfest/</loc>
+    <loc>https://example.org/tags/hackfest/</loc>
     <lastmod>2025-10-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/zz-chapter-1/</loc>
+    <loc>https://example.org/posts/zz-chapter-1/</loc>
     <lastmod>2025-10-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/introduction/</loc>
+    <loc>https://example.org/tags/introduction/</loc>
     <lastmod>2025-10-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://example.org/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/contact/</loc>
+    <loc>https://example.org/contact/</loc>
   </url>
 </urlset>
