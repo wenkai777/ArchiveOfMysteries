@@ -2,73 +2,73 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Archive Of Mysteries</title>
-    <link>https://example.org/tags/</link>
+    <link>https://wenkai777.github.io/ArchiveOfMysteries/tags/</link>
     <description>Recent content in Tags on Archive Of Mysteries</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 25 Nov 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://wenkai777.github.io/ArchiveOfMysteries/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CTF</title>
-      <link>https://example.org/tags/ctf/</link>
+      <link>https://wenkai777.github.io/ArchiveOfMysteries/tags/ctf/</link>
       <pubDate>Tue, 25 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>https://example.org/tags/ctf/</guid>
+      <guid>https://wenkai777.github.io/ArchiveOfMysteries/tags/ctf/</guid>
       <description></description>
     </item>
     <item>
       <title>Flare</title>
-      <link>https://example.org/tags/flare/</link>
+      <link>https://wenkai777.github.io/ArchiveOfMysteries/tags/flare/</link>
       <pubDate>Tue, 25 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>https://example.org/tags/flare/</guid>
+      <guid>https://wenkai777.github.io/ArchiveOfMysteries/tags/flare/</guid>
       <description></description>
     </item>
     <item>
       <title>Forensics</title>
-      <link>https://example.org/tags/forensics/</link>
+      <link>https://wenkai777.github.io/ArchiveOfMysteries/tags/forensics/</link>
       <pubDate>Tue, 25 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>https://example.org/tags/forensics/</guid>
+      <guid>https://wenkai777.github.io/ArchiveOfMysteries/tags/forensics/</guid>
       <description></description>
     </item>
     <item>
       <title>Git</title>
-      <link>https://example.org/tags/git/</link>
+      <link>https://wenkai777.github.io/ArchiveOfMysteries/tags/git/</link>
       <pubDate>Tue, 25 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>https://example.org/tags/git/</guid>
+      <guid>https://wenkai777.github.io/ArchiveOfMysteries/tags/git/</guid>
       <description></description>
     </item>
     <item>
       <title>OSINT</title>
-      <link>https://example.org/tags/osint/</link>
+      <link>https://wenkai777.github.io/ArchiveOfMysteries/tags/osint/</link>
       <pubDate>Tue, 25 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>https://example.org/tags/osint/</guid>
+      <guid>https://wenkai777.github.io/ArchiveOfMysteries/tags/osint/</guid>
       <description></description>
     </item>
     <item>
       <title>Write-Up</title>
-      <link>https://example.org/tags/write-up/</link>
+      <link>https://wenkai777.github.io/ArchiveOfMysteries/tags/write-up/</link>
       <pubDate>Tue, 25 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>https://example.org/tags/write-up/</guid>
+      <guid>https://wenkai777.github.io/ArchiveOfMysteries/tags/write-up/</guid>
       <description></description>
     </item>
     <item>
       <title>Cryptography</title>
-      <link>https://example.org/tags/cryptography/</link>
+      <link>https://wenkai777.github.io/ArchiveOfMysteries/tags/cryptography/</link>
       <pubDate>Mon, 20 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>https://example.org/tags/cryptography/</guid>
+      <guid>https://wenkai777.github.io/ArchiveOfMysteries/tags/cryptography/</guid>
       <description></description>
     </item>
     <item>
       <title>Hackfest</title>
-      <link>https://example.org/tags/hackfest/</link>
+      <link>https://wenkai777.github.io/ArchiveOfMysteries/tags/hackfest/</link>
       <pubDate>Mon, 20 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>https://example.org/tags/hackfest/</guid>
+      <guid>https://wenkai777.github.io/ArchiveOfMysteries/tags/hackfest/</guid>
       <description></description>
     </item>
     <item>
       <title>Introduction</title>
-      <link>https://example.org/tags/introduction/</link>
+      <link>https://wenkai777.github.io/ArchiveOfMysteries/tags/introduction/</link>
       <pubDate>Fri, 03 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>https://example.org/tags/introduction/</guid>
+      <guid>https://wenkai777.github.io/ArchiveOfMysteries/tags/introduction/</guid>
       <description></description>
     </item>
   </channel>

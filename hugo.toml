@@ -1,7 +1,10 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://wenkai777.github.io/ArchiveOfMysteries/'
 languageCode = 'en-us'
 title = 'Archive Of Mysteries'
 theme = 'type-writer'
+
+canonifyURLs = true
+relativeURLs = false
 
 [caches]
   [caches.images]
