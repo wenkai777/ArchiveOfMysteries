@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hackfest on Archive Of Mysteries</title>
+    <link>http://localhost:1313/tags/hackfest/</link>
+    <description>Recent content in Hackfest on Archive Of Mysteries</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 20 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/hackfest/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BrainFuck CTF - 11 Write-ups</title>
+      <link>http://localhost:1313/posts/z-brainfuck-ctf/</link>
+      <pubDate>Mon, 20 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/z-brainfuck-ctf/</guid>
+      <description>&lt;p&gt;At this year&amp;rsquo;s Hackfest, my teammate Marzzeau and I attempted the BrainFuck CTF, as it is described on their website it&amp;rsquo;s a serie of unconventional puzzles that requires logic, cryptography, OSINT and linguistics.&lt;/p&gt;&#xA;&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;Here are our credentials for this CTF:&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/bf-ctf-25/bf_scoreboard.webp&#34;&#xA;    alt=&#34;scoreboard&#34; width=&#34;600px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;See table of content to access a specific challenge faster&lt;/p&gt;&#xA;&lt;h3 id=&#34;snake&#34;&gt;Snake&lt;/h3&gt;&#xA;&lt;p&gt;Description: No information provided&lt;/p&gt;&#xA;&lt;p&gt;This was personally my favourite puzzle, on hackfest&amp;rsquo;s twitter page we found this:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

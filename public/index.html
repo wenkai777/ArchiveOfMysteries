@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
 <head>
-	<meta name="generator" content="Hugo 0.152.2">
+	<meta name="generator" content="Hugo 0.152.2"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Archive Of Mysteries</title>
-<link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml" /><meta property="og:url" content="https://example.org/">
+<link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml" /><meta property="og:url" content="http://localhost:1313/">
   <meta property="og:site_name" content="Archive Of Mysteries">
   <meta property="og:title" content="Archive Of Mysteries">
   <meta property="og:locale" content="en_us">
@@ -15,10 +15,10 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Archive Of Mysteries">
 
-      <link rel="stylesheet" href="/css/root.min.0e732b812b9751962e01a7c4798a1211cd5f8ac8abec7f99793fe306989e459f.css" integrity="sha256-DnMrgSuXUZYuAafEeYoSEc1fisir7H&#43;ZeT/jBpieRZ8=" crossorigin="anonymous">
-      <link rel="stylesheet" href="/css/bundle.min.d95a325399a05b50fe47dcf35b8229b8a2a014fcee5435cfb28204c6ac335fc5.css" integrity="sha256-2VoyU5mgW1D&#43;R9zzW4IpuKKgFPzuVDXPsoIExqwzX8U=" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/root.css">
+    <link rel="stylesheet" href="/css/bundle.css">
 
-      <script src="/js/bundle.cc8ae9952dbfb731affafabdf26e5c60a6910047ff59ccdeaf1daebaa26c8830.js" integrity="sha256-zIrplS2/tzGv&#43;vq98m5cYKaRAEf/Wczerx2uuqJsiDA=" crossorigin="anonymous"></script><script defer src="/js/search/flexsearch.compact.64594b125f7b78bdf4fa8316955922bbebb1cd6baef3f16654bfca20309f18f8.js" integrity="sha256-ZFlLEl97eL30&#43;oMWlVkiu&#43;uxzWuu8/FmVL/KIDCfGPg="></script>
+      <script src="/js/bundle.js"></script><script defer src="/js/search/flexsearch.compact.64594b125f7b78bdf4fa8316955922bbebb1cd6baef3f16654bfca20309f18f8.js" integrity="sha256-ZFlLEl97eL30&#43;oMWlVkiu&#43;uxzWuu8/FmVL/KIDCfGPg="></script>
 <script defer src="/js/search/search.1d980f84df11f3eb7c8c5f17f541d49a0611608df179dd74fa7f06225eb56ace.js" integrity="sha256-HZgPhN8R8&#43;t8jF8X9UHUmgYRYI3xed10&#43;n8GIl61as4="></script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,14 +31,18 @@
   <div id="container">
     <header id="main-header"><div role="navigation" aria-label="Main">
   <div class="nav-left">
-    <a href="https://example.org/" style="color: inherit;">Archive Of Mysteries</a>
+    <a href="http://localhost:1313/" style="color: inherit;">Archive Of Mysteries</a>
   </div>
   <div class="nav-right">
     <div style="position:absolute;width:0px;height:0px;">
       <div id="nav-dropdown-menu" class="hidden" href="#">
     <div class="nav-item">
-      <a
+      <a href="/posts/"
       >Posts</a>
+    </div>
+    <div class="nav-item">
+      <a href="/contact/"
+      >Contact</a>
     </div>
 </div>
     </div>
@@ -48,8 +52,12 @@
 </a>
     <div id="nav-menu">
     <div class="nav-item">
-      <a
+      <a href="/posts/"
       >Posts</a>
+    </div>
+    <div class="nav-item">
+      <a href="/contact/"
+      >Contact</a>
     </div>
 </div>
     <a id="theme-switcher" href="#">
@@ -66,8 +74,8 @@
 </header>
     <div class="flex grow">
       <div id="main-pane">
-        <main id="main-content"><div class="centered-container"><img style="border: var(--dim-color) 1px solid;border-radius:100%;" width="70px" src="images/profile.jpg"/><h1 class="margin-sm"></h1>
-    <div class="dim" style="width:70%;margin:0 15%;"></div>
+        <main id="main-content"><div class="centered-container"><img style="border: var(--dim-color) 1px solid;border-radius:100%;" width="70px" src="images/aom.jpg"/><h1 class="margin-sm">Kaisor</h1>
+    <div class="dim" style="width:70%;margin:0 15%;">We meet again Mysteries... This is my personal blog of my cybersecurity journey. You can expect write-ups, experiences, adventures and ranting.</div>
   </div><div style="width:95%;margin:0 auto;">
     <div class="show-md" style="display:none;"><form onsubmit="searchBarSubmit(event)">
   <div class="search-bar"><svg style="min-width:16px;" width="16px" height="16px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -80,11 +88,37 @@
 <script>
   function searchBarSubmit(event) {
     event.preventDefault();
-    const relativeUrl = `https:\/\/example.org\/search/?q=${encodeURIComponent(event.target.elements['searchInput'].value)}`;
+    const relativeUrl = `http:\/\/localhost:1313\/search/?q=${encodeURIComponent(event.target.elements['searchInput'].value)}`;
     window.location.href = relativeUrl;
   }
 </script>
-</div></div></main>
+</div><h2>Recent Posts</h2>
+<div class="flat-list"><div class="flat-list-item">
+      <div>
+        <a href="/posts/z-flare-ctf/">Flare.io CTF-1: Knights of the Stolen Session</a>
+        <time class="text-sm dim" style="float: right;" datetime="2023-05-02T00:00:00Z">November 25, 2025</time>
+      </div>
+      <small><p>Flare.io is hosting a CTF in which they release 1 challenge a week for the next 6 weeks. The theme is medieval which I love. I&rsquo;m a big fan of games like elden ring and dark souls, in otherwords anything with knights, mages, dragons, etc. It&rsquo;s a very pleasing aesthetic in my opinion. This write-up is about this week&rsquo;s challenge, the first of six.</p></small>
+    </div><div class="flat-list-item">
+      <div>
+        <a href="/posts/z-brainfuck-ctf/">BrainFuck CTF - 11 Write-ups</a>
+        <time class="text-sm dim" style="float: right;" datetime="2023-05-02T00:00:00Z">October 20, 2025</time>
+      </div>
+      <small><p>At this year&rsquo;s Hackfest, my teammate Marzzeau and I attempted the BrainFuck CTF, as it is described on their website it&rsquo;s a serie of unconventional puzzles that requires logic, cryptography, OSINT and linguistics.</p></small>
+    </div><div class="flat-list-item">
+      <div>
+        <a href="/posts/zz-chapter-1/">Chapter 1: Gambit of the fool</a>
+        <time class="text-sm dim" style="float: right;" datetime="2023-05-02T00:00:00Z">October 3, 2025</time>
+      </div>
+      <small><p>Hey there! welcome!</p></small>
+    </div><div class="flat-list-item">
+      <div>
+        <a href="/contact/">Contact</a>
+        <time class="text-sm dim" style="float: right;" datetime="2023-05-02T00:00:00Z">January 1, 0001</time>
+      </div>
+      <small><p>Hey there! Don&rsquo;t hesitate to reach out, whether it&rsquo;s collaboration, a chat about a project or just to say hi.</p></small>
+    </div></div>
+</div></main>
         <footer id="main-footer"><div class="footer">
   <a href="#">Scroll to Top</a>
   <div class="footer-copyright">
@@ -104,11 +138,38 @@
 <script>
   function searchBarSubmit(event) {
     event.preventDefault();
-    const relativeUrl = `https:\/\/example.org\/search/?q=${encodeURIComponent(event.target.elements['searchInput'].value)}`;
+    const relativeUrl = `http:\/\/localhost:1313\/search/?q=${encodeURIComponent(event.target.elements['searchInput'].value)}`;
     window.location.href = relativeUrl;
   }
 </script>
-</aside></div>
+<h3>Tags</h3>
+    <ul class="taxonomy-list"><li>
+    <a class="tag" href="http://localhost:1313/tags/osint/">
+      #osint&nbsp<span class="text-sm dim">2</span>
+    </a>
+      </li><li>
+    <a class="tag" href="http://localhost:1313/tags/write-up/">
+      #write-up&nbsp<span class="text-sm dim">2</span>
+    </a>
+      </li><li>
+    <a class="tag" href="http://localhost:1313/tags/ctf/">
+      #ctf&nbsp<span class="text-sm dim">2</span>
+    </a>
+      </li><li>
+    <a class="tag" href="http://localhost:1313/tags/flare/">
+      #flare&nbsp<span class="text-sm dim">1</span>
+    </a>
+      </li><li>
+    <a class="tag" href="http://localhost:1313/tags/forensics/">
+      #forensics&nbsp<span class="text-sm dim">1</span>
+    </a>
+      </li><li>
+    <a class="tag" href="http://localhost:1313/tags/git/">
+      #git&nbsp<span class="text-sm dim">1</span>
+    </a>
+      </li><li>
+        <a href="http://localhost:1313/tags">See all...</a>
+      </li></ul></aside></div>
   </div>
 </body>
 </html>

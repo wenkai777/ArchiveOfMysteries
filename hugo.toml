@@ -6,3 +6,13 @@ theme = 'type-writer'
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
+
+[[menus.main]]
+  name = 'Posts'
+  pageRef = '/posts'
+  weight = 1
+
+[[menus.main]]
+  name = 'Contact'
+  pageRef = '/contact.md'
+  weight = 2

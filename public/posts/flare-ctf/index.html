@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Flare.io CTF-1: Knights of the Stolen Session | Archive Of Mysteries</title>
+<link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml" /><meta property="og:url" content="http://localhost:1313/posts/flare-ctf/">
+  <meta property="og:site_name" content="Archive Of Mysteries">
+  <meta property="og:title" content="Flare.io CTF-1: Knights of the Stolen Session">
+  <meta property="og:description" content="Flare.io is hosting a CTF in which they release 1 challenge a week for the next 6 weeks. The theme is medieval which I love. I’m a big fan of games like elden ring and dark souls, in otherwords anything with knights, mages, dragons, etc. It’s a very pleasing aesthetic in my opinion. This write-up is about this week’s challenge, the first of six.
+Overview The challenge is titled ‘Knights of the Stolen Session’ and all that is given is a GitHub profile with one repository of a d20 simulator.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-11-25T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-11-25T00:00:00+00:00">
+    <meta property="article:tag" content="Write-Up">
+    <meta property="article:tag" content="CTF">
+    <meta property="article:tag" content="OSINT">
+    <meta property="article:tag" content="Forensics">
+    <meta property="article:tag" content="Git">
+    <meta property="article:tag" content="Flare">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Flare.io CTF-1: Knights of the Stolen Session">
+  <meta name="twitter:description" content="Flare.io is hosting a CTF in which they release 1 challenge a week for the next 6 weeks. The theme is medieval which I love. I’m a big fan of games like elden ring and dark souls, in otherwords anything with knights, mages, dragons, etc. It’s a very pleasing aesthetic in my opinion. This write-up is about this week’s challenge, the first of six.
+Overview The challenge is titled ‘Knights of the Stolen Session’ and all that is given is a GitHub profile with one repository of a d20 simulator.">
+
+    <link rel="stylesheet" href="/css/root.css">
+    <link rel="stylesheet" href="/css/bundle.css">
+
+      <script src="/js/bundle.js"></script><script defer src="/js/search/flexsearch.compact.64594b125f7b78bdf4fa8316955922bbebb1cd6baef3f16654bfca20309f18f8.js" integrity="sha256-ZFlLEl97eL30&#43;oMWlVkiu&#43;uxzWuu8/FmVL/KIDCfGPg="></script>
+<script defer src="/js/search/search.1d980f84df11f3eb7c8c5f17f541d49a0611608df179dd74fa7f06225eb56ace.js" integrity="sha256-HZgPhN8R8&#43;t8jF8X9UHUmgYRYI3xed10&#43;n8GIl61as4="></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+</head>
+<body class="notransition">
+  <div id="container">
+    <header id="main-header"><div role="navigation" aria-label="Main">
+  <div class="nav-left">
+    <a href="http://localhost:1313/" style="color: inherit;">Archive Of Mysteries</a>
+  </div>
+  <div class="nav-right">
+    <div style="position:absolute;width:0px;height:0px;">
+      <div id="nav-dropdown-menu" class="hidden" href="#">
+    <div class="nav-item">
+      <a aria-current="true" class="ancestor" href="/posts/"
+      >Posts</a>
+    </div>
+    <div class="nav-item">
+      <a href="/contact/"
+      >Contact</a>
+    </div>
+</div>
+    </div>
+    <a id="nav-dropdown-button" href="#"><svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 6H20M4 12H20M4 18H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</a>
+    <div id="nav-menu">
+    <div class="nav-item">
+      <a aria-current="true" class="ancestor" href="/posts/"
+      >Posts</a>
+    </div>
+    <div class="nav-item">
+      <a href="/contact/"
+      >Contact</a>
+    </div>
+</div>
+    <a id="theme-switcher" href="#">
+<svg class="light-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 3V4M12 20V21M4 12H3M6.31412 6.31412L5.5 5.5M17.6859 6.31412L18.5 5.5M6.31412 17.69L5.5 18.5001M17.6859 17.69L18.5 18.5001M21 12H20M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+<svg class="dark-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.32031 11.6835C3.32031 16.6541 7.34975 20.6835 12.3203 20.6835C16.1075 20.6835 19.3483 18.3443 20.6768 15.032C19.6402 15.4486 18.5059 15.6834 17.3203 15.6834C12.3497 15.6834 8.32031 11.654 8.32031 6.68342C8.32031 5.50338 8.55165 4.36259 8.96453 3.32996C5.65605 4.66028 3.32031 7.89912 3.32031 11.6835Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</a>
+  </div>
+</div>
+</header>
+    <div class="flex grow">
+      <div id="main-pane">
+        <main id="main-content"><div class="single-header">
+<ol class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a itemprop="item" href="http://localhost:1313/">
+        <span itemprop="name">Home</span>
+      </a>
+      <meta itemprop="position" content='1' />
+    </li>
+    <span>&nbsp»&nbsp</span>
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a itemprop="item" href="http://localhost:1313/posts/">
+        <span itemprop="name">Posts</span>
+      </a>
+      <meta itemprop="position" content='2' />
+    </li>
+    <span>&nbsp»&nbsp</span>
+</ol>
+<h1>Flare.io CTF-1: Knights of the Stolen Session</h1><time class="dim" datetime="2025-11-25T00:00:00&#43;00:00">November 25, 2025</time><div class="term-container"><div class="tag">
+        <a href="http://localhost:1313/tags/write-up/">#Write-up</a>
+      </div><div class="tag">
+        <a href="http://localhost:1313/tags/ctf/">#CTF</a>
+      </div><div class="tag">
+        <a href="http://localhost:1313/tags/osint/">#OSINT</a>
+      </div><div class="tag">
+        <a href="http://localhost:1313/tags/forensics/">#Forensics</a>
+      </div><div class="tag">
+        <a href="http://localhost:1313/tags/git/">#Git</a>
+      </div><div class="tag">
+        <a href="http://localhost:1313/tags/flare/">#Flare</a>
+      </div></ol></div>
+  <section class="page-section"><p>Flare.io is hosting a CTF in which they release 1 challenge a week for the next 6 weeks. The theme is medieval which I love. I&rsquo;m a big fan of games like <em>elden ring</em> and <em>dark souls</em>, in otherwords anything with knights, mages, dragons, etc. It&rsquo;s a very pleasing aesthetic in my opinion. This write-up is about this week&rsquo;s challenge, the first of six.</p>
+<h2 id="overview">Overview</h2>
+<p>The challenge is titled &lsquo;Knights of the Stolen Session&rsquo; and all that is given is a GitHub profile with one repository of a d20 simulator.</p>
+<figure><img src="/images/flare-25/github-repo.png"
+    alt="github_repository" width="600px">
+</figure>
+
+<h3 id="first-glance">First glance</h3>
+<p>The GitHub repository contains 3 files; <code>readme.md</code>, <code>roll-test-chat.txt</code> and <code>roll.py</code>. While these three files are eyeing me, my first instinct was to analyse the github properly. I looked at the branch and commits to see if anything is out of the unordinary, but nothing unusual except for the latest commit where roll-test-chat is added, a description is given:</p>
+<blockquote>
+<p>Logs of the great IRC</p>
+</blockquote>
+<p>I then take a look at the starred repository, there were 3; his own repo, ExifTool and phpMyAdmin. Since ExifTool is used for inspecting image metadata and there were only Python code in the repo so I let go of this path.</p>
+<p>Once the quick github sweep is done, I cloned the repo and ran ExifTool on every file just in case but everything is normal. The readme.md is a very normal description on how to use the roll.py, roll.py is a python script that simulates a d20 and lastly roll-test-chat.txt looks to be the most eye catching one. Here&rsquo;s a sample:</p>
+<pre tabindex="0"><code class="language-[#knights-of-the-stolen-session-dice-lounge" data-lang="[#knights-of-the-stolen-session-dice-lounge">swordnshield: alright nerds the roll script is live and I want to test it out. type !roll xdY+Z and try not to break it in the first five minutes like last time
+ratpaladin: &#34;not to break it&#34; bro it fell apart last time because you coded it
+bard_ofbytes: he wrote that thing like a 4-year-old
+artemisafk: both of you shut up, I’m trying to eat noodles and deride you simultaneously
+hexgobl1n: ok seriously shut your goblins I roll initiative
+hexgobl1n: !roll 1d20+3
+ swordnshield (roll-bot): → 1d20 (4) + 3 = 7
+ratpaladin: LMAOOOOOO
+artemisafk: bro rolled a SEVEN. you couldn’t initiative your way out of a wet paper bag
+hexgobl1n: I hope your router catches on fire
+bard_ofbytes: anyway, welcome to our campaign, &#34;Knights of the Stolen Session&#34;
+ratpaladin: bro that sounds like we’re LARPing as PAM interns
+hexgobl1n: ngl that’s actually the vibe
+artemisafk: ok I cast perception before Rat does something stupid again
+ !roll 1d20+1
+ roll-bot: → 1d20 (2) + 1 = 3
+bard_ofbytes: LMFAOOOOOOO
+</code></pre><p>There&rsquo;s is a lot to unpack here. It looks like a discord channel, there&rsquo;s a <strong>#channel-name</strong> at the top and similar chat formatting, espacially with the roll-bot. There&rsquo;s weird mentions of stolen session and other words like PAM, RuberDucky but none of those made sense in this CTF context. So after trying to see if there&rsquo;s a hidden encryption in this txt like rolls mapping to a character I went down the python route.</p>
+<h3 id="down-the-rabbit-hole">Down the rabbit hole</h3>
+<p>This is where hell began, essentially I noticed that the txt contained raw results, the roll-bot gives out 15 raw results before modifiers</p>
+<blockquote>
+<p>4, 2, 19, 6, 14, 1, 17, 7, 13, 20, 1, 16, 8, 11, 14</p>
+</blockquote>
+<p>After another read, I noticed it was not 15 but 16 raw results since this is mentioned:</p>
+<pre tabindex="0"><code> !roll 1d20-2
+ roll-bot: → 1d20 (20) - 2 = 18
+hexgobl1n: NAT 20 BAYBEEE
+swordnshield: stop celebrating you rolled with disadvantage
+</code></pre><p>While it looks like 1 raw result, it&rsquo;s 2. Rolling with disadvantage means rolling twice and taking the weaker dice, meaning if he got the highest result, we also know the result of the second dice rolled not mentioned in the chat. This increases the raw results to 16</p>
+<blockquote>
+<p>4, 2, 19, 6, 14, 1, 17, 7, 13, 20, 20, 1, 16, 8, 11, 14</p>
+</blockquote>
+<p>roll.py uses <code>Random.randint(1, 20)</code> so now my goal is to find the seed used in this chat by matching it to those 16 outputs. I ended up writing a script that would check python seeds until it find a seed for which I would get the same 16 outputs. I also added a progress tracker because on first launch it was hard to tell how the script is progressing when there is no visual feedback.</p>
+<pre tabindex="0"><code>#!/usr/bin/env python3
+from random import Random
+
+ROLLS = [4, 2, 19, 6, 14, 1, 17, 7, 13, 20, 20, 1, 16, 8, 11, 14]
+ROLLS_LEN = len(ROLLS)
+
+def seed_matches(seed):
+    rng = Random(seed)
+    for expected in ROLLS:
+        if rng.randint(1, 20) != expected:
+            return False
+    return True
+
+def main():
+    start = 0
+    end = 2**32
+    progress = 1_000_000
+    checked = 0
+
+    print(f&#34;Searching seeds {start}..{end-1}&#34;)
+    for seed in range(start, end):
+        if seed_matches(seed):
+            print(f&#34;Seed {seed}: {&#39;,&#39;.join(str(x) for x in ROLLS)}&#34;)
+            print(&#34;Match found&#34;)
+            return
+        checked += 1
+        if progress and checked % progress == 0:
+            print(f&#34;checked {checked:,} seeds&#34;)
+
+    print(&#34;No match found&#34;)
+
+if __name__ == &#34;__main__&#34;:
+    main()
+</code></pre><p>Considering it didn&rsquo;t find a match within the first 100,000,000 seeds, I decided to attempt something else first and leave this to run overnight.</p>
+<h3 id="down-the-rabbit-void">Down the rabbit void</h3>
+<p>I tried many other tactics either with trying to figure out a clue in the roll-test-chat.txt or messing with the seed/dice generation. The most notable attempt was mapping the roll results possible flag text. So 1d20 can only roll a number between 1 to 20 which would map only from A-T, therefore we need at least 2d20. With 2 dice I can roll between 2 to 40 which is 39 characters, so lets set the mapping in this order:</p>
+<blockquote>
+<p>A-Z, 0-9, {}_</p>
+</blockquote>
+<p>This is exactly 39 characters, so I ran a script that would roll 10,000 dices group them in pair then map this result, if for the 5,000 characters the word FLARE could be found it would also print the next few characters, I also made it so that it would do so for 100,000 seeds. The issue with this tactic is that it&rsquo;s extremely unlikely, the median of 2 roll is 21 so getting low numbers and high numbers are harder. As expected, there were a few FLARE&rsquo;s found but no flag format. At this point it was late and the seed script from earlier was nowhere near done, so I went to sleep.</p>
+<p>I woke up all excited, expecting the overnight script to have found me a seed and this was the result:</p>
+<pre tabindex="0"><code>...
+checked 4,293,000,000 seeds
+checked 4,294,000,000 seeds
+No match found
+</code></pre><p>Devastation&hellip;.</p>
+<h3 id="salvation">Salvation</h3>
+<p>A hint was dropped by a user named PHtheAdmin, they essentially said to look at the bigger picture. So I went back to the GitHub profile and searching around. I noticed that swordnshield had 4 commits yet there was 5 commits on the repository&hellip; How did I miss that on my first sweep&hellip; T-T</p>
+<figure><img src="/images/flare-25/odd-commit.png"
+    alt="odd commit" width="400px">
+</figure>
+
+<p>to get more details, I run:</p>
+<pre tabindex="0"><code>git log
+</code></pre><figure><img src="/images/flare-25/git-log.png"
+    alt="git log" width="400px">
+</figure>
+
+<p>As we can see we have the same swordnshield author but whose email domain was a website</p>
+<blockquote>
+<p>bobshomepage.net</p>
+</blockquote>
+<p>Going on this website, it stated that it had been discountinued and apart from text, there wasn&rsquo;t much else so I checked the classic <code>/robots.txt</code>:</p>
+<pre tabindex="0"><code>User-agent: *
+Disallow: /sealed-chamber-deadbeef.html
+</code></pre><p>That&rsquo;s a very specific path, visiting it led me to <em>The Secret Place</em>, clearly on the right path considering the big d20 picture</p>
+<figure><img src="/images/flare-25/d20.png"
+    alt="d20" width="400px">
+</figure>
+
+<p>Given the quote under the image and the starred ExifTool repository, I ran ExifTool on the d20 image which revealed the flag under <strong>User Comment</strong></p>
+<p><code>flare{0s1nt_m4st3r_749261}</code></p>
+</section></main>
+        <footer id="main-footer"><div class="footer">
+  <a href="#">Scroll to Top</a>
+  <div class="footer-copyright">
+    <div class="dim">© 2025 </div>
+    <div>Made with ❤️ and powered by <a href="https://github.com/math-queiroz/rusty-typewriter" target="_blank">Rusty Typewriter</a> theme for <a href="https://gohugo.io/" target="_blank">Hugo</a></div>
+  </div>
+</div>
+</footer>
+      </div><aside id="side-pane" class="side-sticky"><div class="side-details">
+    <span>1233 words</span>
+    <span>6 - 8 minutes read</span></div><h3>Table Of Contents</h3><nav id="TableOfContents">
+  <ul>
+    <li><a href="#overview">Overview</a>
+      <ul>
+        <li><a href="#first-glance">First glance</a></li>
+        <li><a href="#down-the-rabbit-hole">Down the rabbit hole</a></li>
+        <li><a href="#down-the-rabbit-void">Down the rabbit void</a></li>
+        <li><a href="#salvation">Salvation</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav><h3>Related</h3>
+    <ul><li><a href="/posts/z-brainfuck-ctf/">BrainFuck CTF - 11 Write-ups</a></li></ul></aside></div>
+  </div>
+</body>
+</html>

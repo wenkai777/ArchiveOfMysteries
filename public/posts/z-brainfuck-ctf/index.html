@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>BrainFuck CTF - 11 Write-ups | Archive Of Mysteries</title>
+<link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml" /><meta property="og:url" content="http://localhost:1313/posts/z-brainfuck-ctf/">
+  <meta property="og:site_name" content="Archive Of Mysteries">
+  <meta property="og:title" content="BrainFuck CTF - 11 Write-ups">
+  <meta property="og:description" content="At this year’s Hackfest, my teammate Marzzeau and I attempted the BrainFuck CTF, as it is described on their website it’s a serie of unconventional puzzles that requires logic, cryptography, OSINT and linguistics.
+Overview Here are our credentials for this CTF:
+See table of content to access a specific challenge faster
+Snake Description: No information provided
+This was personally my favourite puzzle, on hackfest’s twitter page we found this:">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-10-20T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-10-20T00:00:00+00:00">
+    <meta property="article:tag" content="Write-Up">
+    <meta property="article:tag" content="CTF">
+    <meta property="article:tag" content="OSINT">
+    <meta property="article:tag" content="Cryptography">
+    <meta property="article:tag" content="Hackfest">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="BrainFuck CTF - 11 Write-ups">
+  <meta name="twitter:description" content="At this year’s Hackfest, my teammate Marzzeau and I attempted the BrainFuck CTF, as it is described on their website it’s a serie of unconventional puzzles that requires logic, cryptography, OSINT and linguistics.
+Overview Here are our credentials for this CTF:
+See table of content to access a specific challenge faster
+Snake Description: No information provided
+This was personally my favourite puzzle, on hackfest’s twitter page we found this:">
+
+    <link rel="stylesheet" href="/css/root.css">
+    <link rel="stylesheet" href="/css/bundle.css">
+
+      <script src="/js/bundle.js"></script><script defer src="/js/search/flexsearch.compact.64594b125f7b78bdf4fa8316955922bbebb1cd6baef3f16654bfca20309f18f8.js" integrity="sha256-ZFlLEl97eL30&#43;oMWlVkiu&#43;uxzWuu8/FmVL/KIDCfGPg="></script>
+<script defer src="/js/search/search.1d980f84df11f3eb7c8c5f17f541d49a0611608df179dd74fa7f06225eb56ace.js" integrity="sha256-HZgPhN8R8&#43;t8jF8X9UHUmgYRYI3xed10&#43;n8GIl61as4="></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+</head>
+<body class="notransition">
+  <div id="container">
+    <header id="main-header"><div role="navigation" aria-label="Main">
+  <div class="nav-left">
+    <a href="http://localhost:1313/" style="color: inherit;">Archive Of Mysteries</a>
+  </div>
+  <div class="nav-right">
+    <div style="position:absolute;width:0px;height:0px;">
+      <div id="nav-dropdown-menu" class="hidden" href="#">
+    <div class="nav-item">
+      <a aria-current="true" class="ancestor" href="/posts/"
+      >Posts</a>
+    </div>
+    <div class="nav-item">
+      <a href="/contact/"
+      >Contact</a>
+    </div>
+</div>
+    </div>
+    <a id="nav-dropdown-button" href="#"><svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 6H20M4 12H20M4 18H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</a>
+    <div id="nav-menu">
+    <div class="nav-item">
+      <a aria-current="true" class="ancestor" href="/posts/"
+      >Posts</a>
+    </div>
+    <div class="nav-item">
+      <a href="/contact/"
+      >Contact</a>
+    </div>
+</div>
+    <a id="theme-switcher" href="#">
+<svg class="light-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 3V4M12 20V21M4 12H3M6.31412 6.31412L5.5 5.5M17.6859 6.31412L18.5 5.5M6.31412 17.69L5.5 18.5001M17.6859 17.69L18.5 18.5001M21 12H20M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+<svg class="dark-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.32031 11.6835C3.32031 16.6541 7.34975 20.6835 12.3203 20.6835C16.1075 20.6835 19.3483 18.3443 20.6768 15.032C19.6402 15.4486 18.5059 15.6834 17.3203 15.6834C12.3497 15.6834 8.32031 11.654 8.32031 6.68342C8.32031 5.50338 8.55165 4.36259 8.96453 3.32996C5.65605 4.66028 3.32031 7.89912 3.32031 11.6835Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</a>
+  </div>
+</div>
+</header>
+    <div class="flex grow">
+      <div id="main-pane">
+        <main id="main-content"><div class="single-header">
+<ol class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a itemprop="item" href="http://localhost:1313/">
+        <span itemprop="name">Home</span>
+      </a>
+      <meta itemprop="position" content='1' />
+    </li>
+    <span>&nbsp»&nbsp</span>
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a itemprop="item" href="http://localhost:1313/posts/">
+        <span itemprop="name">Posts</span>
+      </a>
+      <meta itemprop="position" content='2' />
+    </li>
+    <span>&nbsp»&nbsp</span>
+</ol>
+<h1>BrainFuck CTF - 11 Write-ups</h1><time class="dim" datetime="2025-10-20T00:00:00&#43;00:00">October 20, 2025</time><div class="term-container"><div class="tag">
+        <a href="http://localhost:1313/tags/write-up/">#Write-up</a>
+      </div><div class="tag">
+        <a href="http://localhost:1313/tags/ctf/">#CTF</a>
+      </div><div class="tag">
+        <a href="http://localhost:1313/tags/osint/">#OSINT</a>
+      </div><div class="tag">
+        <a href="http://localhost:1313/tags/cryptography/">#Cryptography</a>
+      </div><div class="tag">
+        <a href="http://localhost:1313/tags/hackfest/">#Hackfest</a>
+      </div></ol></div>
+  <section class="page-section"><p>At this year&rsquo;s Hackfest, my teammate Marzzeau and I attempted the BrainFuck CTF, as it is described on their website it&rsquo;s a serie of unconventional puzzles that requires logic, cryptography, OSINT and linguistics.</p>
+<h2 id="overview">Overview</h2>
+<p>Here are our credentials for this CTF:</p>
+<figure><img src="/images/bf-ctf-25/bf_scoreboard.webp"
+    alt="scoreboard" width="600px">
+</figure>
+
+<p>See table of content to access a specific challenge faster</p>
+<h3 id="snake">Snake</h3>
+<p>Description: No information provided</p>
+<p>This was personally my favourite puzzle, on hackfest&rsquo;s twitter page we found this:</p>
+<figure><img src="/images/bf-ctf-25/bf_snake.webp"
+    alt="snake" width="400px">
+</figure>
+
+<p>It&rsquo;s a short video of the game snake being played, the pastebin is password protected and the snake captures 4 flags. While we watch the video Marzzeau brings up that the snake moves a lot before each flag, maybe tracing letters? Upon that notice I start counting the movements between each flag. Turns out the snake changes direction exactly 8 times before reaching a flag which would map greatly to binary, we just had our Interstellar moment. Noting every left turn as 0 and every right turn as 1 we end up with</p>
+<blockquote>
+<p>00110001 00110111 01010100 01001000</p>
+</blockquote>
+<p>Mapping it to ASCII characters</p>
+<blockquote>
+<p>17TH</p>
+</blockquote>
+<p>I test it as the pastebin password and we end up getting the flag</p>
+<p><code>{LEFT_RIGHT_LEFT_RIGHT}</code> <strong>5 points</strong></p>
+<h3 id="info-around-me">&ldquo;Info around me&rdquo;</h3>
+<p>Description: No information provided</p>
+<p>On the conference badge, there was a barcode upon scanning it I was lead to a pastebin account with a password protected pastebin named <em>&ldquo;Info around me&rdquo;</em>. There didn&rsquo;t seem to be any visual clues depicted on the site, such as date or group, but ultimately searching for more I clicked on the account user&rsquo;s profile picture which gets the following:</p>
+<figure><img src="/images/bf-ctf-25/bf_pfp.webp"
+    alt="profile picture" width="300px">
+</figure>
+
+<blockquote>
+<p>ITHOUGHTWHAT1DDOWASPRETENDIWASAD3ADMAN</p>
+</blockquote>
+<p>It really is around him after all&hellip; this also happens to be a ghost in the shell reference quote. So I tried a variation of GhostInTheShell and Deadman as the pastebin password but none of them worked. Then I tried that entire sentence as the password and got the flag</p>
+<p><code>{VERY_POOR_OPSEC}</code> <strong>1 point</strong></p>
+<h3 id="colorblind">Colorblind</h3>
+<p>Description: No information provided</p>
+<p>A colorblind image with a password protected pastebin link could be found on mastodon, I simply put it through a colorblind filter online</p>
+<figure><img src="/images/bf-ctf-25/bf_colorblind.webp"
+    alt="colorblind and imageblind" width="500px">
+</figure>
+
+<p>Result reads as</p>
+<blockquote>
+<p>3LZ6</p>
+</blockquote>
+<p>which I input as the password of the pastebin link and got the flag</p>
+<p><code>{FREE_DIAGNOSIS}</code> <strong>2 points</strong></p>
+<h3 id="do-not-engage">Do not engage</h3>
+<p>Description: No information provided</p>
+<p>Walking around the conference, we stumbled upon a sign in the corner of the HFCTF room</p>
+<figure><img src="/images/bf-ctf-25/bf_engage.webp"
+    alt="do not engage" width="300px">
+</figure>
+
+<p>Above some letters a black dot can be seen which put together gave us</p>
+<blockquote>
+<p>RB.GY/CUCOAB</p>
+</blockquote>
+<p>This link wouldnt work and so Marzzeau suggested putting it through a link unshortener in which we got the pastebin link with the flag</p>
+<p><code>{DO_NOT_SUBMIT!}</code> <strong>2 points</strong></p>
+<h3 id="freebie">Freebie</h3>
+<p>Description: No information provided</p>
+<p>While scouting the source code of the hackfest BrainFuck page, we found a pastebin link</p>
+<figure><img src="/images/bf-ctf-25/bf_freebie.webp"
+    alt="source code" width="500px">
+</figure>
+
+<p><code>{title_says_it_all}</code> <strong>1 point</strong></p>
+<p>I wonder why unlike the other flags this one isn&rsquo;t all caps</p>
+<h3 id="inside">Inside</h3>
+<p>Description: No information provided</p>
+<p>At the start of the conference we are given this card with a sticker that reads Don&rsquo;t look inside&hellip; so I didn&rsquo;t. Jokes aside, our first instinct which came from a similar challenge at Northsec CTF 2025 was to scan it with a NFC reader.</p>
+<figure><img src="/images/bf-ctf-25/bf_inside.webp"
+    alt="nfc card" width="200px">
+</figure>
+
+<p>Result is a pastebin link with the flag</p>
+<p><code>{GREAT_FOR_YOUR_WALLET}</code> <strong>3 points</strong></p>
+<h3 id="location-location-location-location">Location, location, location, location</h3>
+<p>Description: No information provided</p>
+<p>Near the entrance of the conference a map of the conference layout can be found with 5 laughing faces, one with an open lock and one with a locked lock. Going to all these locations and searching around I found stickers with tags inside of them. Reading them with a NFC reader I got a pastebin link per location</p>
+<p>Location pastebin 1 (the one with an open lock)</p>
+<p>Location, Location pastebin 2</p>
+<p>Location, Location, Location pastebin 3</p>
+<p>Location, Location, Location, Location pastebin 4</p>
+<p>Password protected pastebin (the one with a locked lock)</p>
+<p>Every location gave strings and I tried to put those as pastebin links but it didn&rsquo;t work. Seeing that location 1 had an open lock I tried to put the string given in pastebin 1 as the password to the locked lock location. It worked and that pastebin gave me the link to a google docs</p>
+<figure><img src="/images/bf-ctf-25/bf_location_link.webp"
+    alt="locked location pastebin" width="400px">
+</figure>
+
+<p>However that link is way to short to be a google docs so I appended the other locations given string to the link and it gave us access to the document which had the flag as the document title and on the document</p>
+<figure><img src="/images/bf-ctf-25/bf_location.webp"
+    alt="document" width="300px">
+</figure>
+
+<p><code>{EASTER_EGG_HUNT}</code> <strong>5 points</strong></p>
+<h3 id="unfolding--volant">Unfolding / Volant</h3>
+<p>Description: No information provided</p>
+<p>During the second day of the conference, I sat on a couch reading the pamphlet with my friend wondering what talks we would attend today. Making it past the talks, I stumbled upon the BrainFuck announcement which looked completely normal.</p>
+<figure><img src="/images/bf-ctf-25/bf_book.webp"
+    alt="pamphlet" width="500px">
+</figure>
+
+<p>However the green line caught my eye, Prize, who doesn&rsquo;t like prizes. As I try to read it I lost a few braincells, what the f**k is a tails/voir?? That&rsquo;s when I noticed it was just a seperation between the english and french translation and most importantly it was not tails but the word details which was missing it&rsquo;s e. So i read all of the background text and took note of every missing letter</p>
+<blockquote>
+<p><em>b</em>rainfuck, ed<em>i</em>tion, <em>t</em>outes, <em>l</em>es, ph<em>y</em>sique, <em>e</em>sprit, h&rsquo;<em>h</em>esitez, endr<em>o</em>its, yo<em>u</em>r, pu<em>z</em>zles, e<em>y</em>es, d<em>e</em>tails, de<em>t</em>ail</p>
+</blockquote>
+<blockquote>
+<p>bitlyehouzyet</p>
+</blockquote>
+<p>Looking at the 5 first characters it is clearly a bit.ly link and so I searched up bit.ly/ehouzyet which led to a pastebin with the flag</p>
+<p><code>{YOU_NEVER_LISTEN}</code> <strong>3 points</strong></p>
+<h3 id="vandalism-">Vandalism :(</h3>
+<p>Description: No information provided</p>
+<p>Walking around the conference this very cool looking poster could be found on the wall</p>
+<figure><img src="/images/bf-ctf-25/bf_poster.webp"
+    alt="poster" width="300px">
+</figure>
+
+<p>The universal repository of knowledge is probably a reference to Wikipedia and the theme of the conference is based on <em>Ghost in the Shell</em>, since the poster provides a timestamp we decided to take a look at the version history of Ghost in the Shell&rsquo;s wikipedia page which coincidently has a version with that exact timestamp and the author is HF?? couldn&rsquo;t be more obvious.</p>
+<figure><img src="/images/bf-ctf-25/bf_wiki.webp"
+    alt="wiki" width="500px">
+</figure>
+
+<p>On this version of <em>Ghost in the Shell</em> in Wikipedia we found a pastebin with the flag and no I will unfortunately not be donating to wikipedia.</p>
+<p><code>{DONATE_TO_WIKIPEDIA}</code> <strong>3 points</strong></p>
+<h3 id="winking">Winking</h3>
+<p>Description: No information provided</p>
+<p>On provided stickers at the start of the conference, one of them was a winking laughing man, here is what it looks like</p>
+<figure><img src="/images/bf-ctf-25/bf_wink.webp"
+    alt="wink" width="400px">
+</figure>
+
+<p>We noted down every character in line with the white lines from shortest to longest and got</p>
+<blockquote>
+<p>RB.GY/I5KO4N</p>
+</blockquote>
+<p>after putting it into an unshortener it gave us a pastebin link that contained the flag</p>
+<p><code>{MAY_REQUIRE_MAGNIFICATION}</code> <strong>3 points</strong></p>
+<h3 id="frames">Frames</h3>
+<p>Description: No information provided</p>
+<p>With almost no time left on the clock we find this picture we somehow missed on hackfest&rsquo;s facebook</p>
+<figure><img src="/images/bf-ctf-25/bf_frames.webp"
+    alt="frames" width="300px">
+</figure>
+
+<p>Obviously the link is password protected but with those numbers, Marzzeau found a website to check the frames of the movie <em>Ghost in the Shell</em>, the frame could be changed by tweaking the source code and those exact frames listed in the numbers would be frames with words. So we put it together which gave us</p>
+<blockquote>
+<p>ACCESSFRIENDLYPOLICEDATAINTHEEXIT</p>
+</blockquote>
+<p>the password to the pastebin</p>
+<p><code>{EVERY_FRAME_A_PAINTING}</code> <strong>3 points</strong></p>
+<p>HOWEVER, we were unable to submit it as it was 1 minute pass ending&hellip;</p>
+<h2 id="final-results">Final Results</h2>
+<p>By the end of the conference, after getting paranoid and starting to believe everything around me could be a clue, we ended up scoring <em><strong>11/17 flags</strong></em> for a total of <em><strong>29 points</strong></em> (would have been 12 flags and 32 points if we had a single extra minute). We placed 7th, however we will be back next year aiming for that 1st place and black coin!</p>
+<figure><img src="/images/bf-ctf-25/bf_result.webp"
+    alt="results" width="600px">
+</figure>
+
+</section></main>
+        <footer id="main-footer"><div class="footer">
+  <a href="#">Scroll to Top</a>
+  <div class="footer-copyright">
+    <div class="dim">© 2025 </div>
+    <div>Made with ❤️ and powered by <a href="https://github.com/math-queiroz/rusty-typewriter" target="_blank">Rusty Typewriter</a> theme for <a href="https://gohugo.io/" target="_blank">Hugo</a></div>
+  </div>
+</div>
+</footer>
+      </div><aside id="side-pane" class="side-sticky"><div class="side-details">
+    <span>1238 words</span>
+    <span>8 - 10 minutes read</span></div><h3>Table Of Contents</h3><nav id="TableOfContents">
+  <ul>
+    <li><a href="#overview">Overview</a>
+      <ul>
+        <li><a href="#snake">Snake</a></li>
+        <li><a href="#info-around-me">&ldquo;Info around me&rdquo;</a></li>
+        <li><a href="#colorblind">Colorblind</a></li>
+        <li><a href="#do-not-engage">Do not engage</a></li>
+        <li><a href="#freebie">Freebie</a></li>
+        <li><a href="#inside">Inside</a></li>
+        <li><a href="#location-location-location-location">Location, location, location, location</a></li>
+        <li><a href="#unfolding--volant">Unfolding / Volant</a></li>
+        <li><a href="#vandalism-">Vandalism :(</a></li>
+        <li><a href="#winking">Winking</a></li>
+        <li><a href="#frames">Frames</a></li>
+      </ul>
+    </li>
+    <li><a href="#final-results">Final Results</a></li>
+  </ul>
+</nav></aside></div>
+  </div>
+</body>
+</html>

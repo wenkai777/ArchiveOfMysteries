@@ -400,7 +400,54 @@ pre:has(code) {
   color: var(--code-text-color);
   background-color: var(--code-background-color) !important;
 }
-/* sanity rules */
+
+/* --- Custom blog header styling --- */
+#main-content > div > section.page-section h2,
+#main-content > div > section.page-section h3 {
+  color: color-mix(in lab, var(--primary-color) 70%, #fff 30%);
+  font-weight: 800;
+}
+
+#main-content > div > section.page-section h3::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+  margin-bottom: 0.5rem;
+  background: color-mix(in lab, var(--primary-color) 80%, #fff 20%);
+  border-radius: 2px;
+  opacity: 0.8;
+}
+
+/* --- Profile picutre change --- */
+#main-content > div.centered-container > img {
+  border: none !important;
+  border-radius: 0 !important;
+  width: auto;
+  max-width: 25%;
+  height: auto;
+}
+
+/* --- Custom animation --- */
+#main-content h2,
+#main-content h3 {
+  overflow: hidden;
+  border-right: 2px solid var(--primary-color);
+  white-space: nowrap;
+  width: 0;
+  animation: typing 3s steps(30, end) forwards, blink 0.8s steps(1, end) infinite;
+}
+
+@keyframes typing {
+  0% { width: 0; border-right: 2px solid var(--primary-color); }
+  99% { width: 100%; border-right: 2px solid var(--primary-color); }
+  100% { width: 100%; border-right: none; }
+}
+
+@keyframes blink {
+  0%, 50%, 100% { border-color: transparent; }
+  25%, 75% { border-color: var(--primary-color); }
+}/* sanity rules */
 
 html {
   min-width: 320px;

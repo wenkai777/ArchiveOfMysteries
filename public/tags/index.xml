@@ -2,10 +2,74 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Archive Of Mysteries</title>
-    <link>https://example.org/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on Archive Of Mysteries</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 25 Nov 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CTF</title>
+      <link>http://localhost:1313/tags/ctf/</link>
+      <pubDate>Tue, 25 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/ctf/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Flare</title>
+      <link>http://localhost:1313/tags/flare/</link>
+      <pubDate>Tue, 25 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/flare/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Forensics</title>
+      <link>http://localhost:1313/tags/forensics/</link>
+      <pubDate>Tue, 25 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/forensics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Git</title>
+      <link>http://localhost:1313/tags/git/</link>
+      <pubDate>Tue, 25 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/git/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>OSINT</title>
+      <link>http://localhost:1313/tags/osint/</link>
+      <pubDate>Tue, 25 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/osint/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Write-Up</title>
+      <link>http://localhost:1313/tags/write-up/</link>
+      <pubDate>Tue, 25 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/write-up/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cryptography</title>
+      <link>http://localhost:1313/tags/cryptography/</link>
+      <pubDate>Mon, 20 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/cryptography/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hackfest</title>
+      <link>http://localhost:1313/tags/hackfest/</link>
+      <pubDate>Mon, 20 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/hackfest/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Introduction</title>
+      <link>http://localhost:1313/tags/introduction/</link>
+      <pubDate>Fri, 03 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/introduction/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>
