@@ -1,7 +1,7 @@
 +++
 date = '2025-10-03T00:00:00-00:00'
 draft = false
-title = 'Chapter 1: Gambit of the fool'
+title = 'Chapter 1
 tags = ['Introduction']
 +++
 
