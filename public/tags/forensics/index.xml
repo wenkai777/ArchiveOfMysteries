@@ -2,18 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Forensics on Archive Of Mysteries</title>
-    <link>https://wenkai777.github.io/ArchiveOfMysteries/tags/forensics/</link>
+    <link>http://localhost:1313/ArchiveOfMysteries/tags/forensics/</link>
     <description>Recent content in Forensics on Archive Of Mysteries</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 25 Nov 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://wenkai777.github.io/ArchiveOfMysteries/tags/forensics/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/ArchiveOfMysteries/tags/forensics/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Flare.io CTF-1: Knights of the Stolen Session</title>
-      <link>https://wenkai777.github.io/ArchiveOfMysteries/posts/z-flare-ctf/</link>
+      <link>http://localhost:1313/ArchiveOfMysteries/posts/z-flare-ctf1/</link>
       <pubDate>Tue, 25 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>https://wenkai777.github.io/ArchiveOfMysteries/posts/z-flare-ctf/</guid>
+      <guid>http://localhost:1313/ArchiveOfMysteries/posts/z-flare-ctf1/</guid>
       <description>&lt;p&gt;Flare.io is hosting a CTF in which they release 1 challenge a week for the next 6 weeks. The theme is medieval which I love. I&amp;rsquo;m a big fan of games like &lt;em&gt;elden ring&lt;/em&gt; and &lt;em&gt;dark souls&lt;/em&gt;, in otherwords anything with knights, mages, dragons, etc. It&amp;rsquo;s a very pleasing aesthetic in my opinion. This write-up is about this week&amp;rsquo;s challenge, the first of six.&lt;/p&gt;&#xA;&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;The challenge is titled &amp;lsquo;Knights of the Stolen Session&amp;rsquo; and all that is given is a GitHub profile with one repository of a d20 simulator.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>CyberSci CTF - 3 Write-ups</title>
+      <link>http://localhost:1313/ArchiveOfMysteries/posts/cybersci-ctf/</link>
+      <pubDate>Sun, 23 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ArchiveOfMysteries/posts/cybersci-ctf/</guid>
+      <description></description>
     </item>
   </channel>
 </rss>

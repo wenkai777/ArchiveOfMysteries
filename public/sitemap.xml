@@ -2,53 +2,65 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://wenkai777.github.io/ArchiveOfMysteries/</loc>
+    <loc>http://localhost:1313/ArchiveOfMysteries/</loc>
+    <lastmod>2025-12-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/ArchiveOfMysteries/tags/ctf/</loc>
+    <lastmod>2025-12-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/ArchiveOfMysteries/tags/flare/</loc>
+    <lastmod>2025-12-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/ArchiveOfMysteries/posts/flare-ctf2/</loc>
+    <lastmod>2025-12-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/ArchiveOfMysteries/posts/</loc>
+    <lastmod>2025-12-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/ArchiveOfMysteries/tags/</loc>
+    <lastmod>2025-12-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/ArchiveOfMysteries/tags/web/</loc>
+    <lastmod>2025-12-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/ArchiveOfMysteries/tags/write-up/</loc>
+    <lastmod>2025-12-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/ArchiveOfMysteries/posts/z-flare-ctf1/</loc>
     <lastmod>2025-11-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://wenkai777.github.io/ArchiveOfMysteries/tags/ctf/</loc>
+    <loc>http://localhost:1313/ArchiveOfMysteries/tags/forensics/</loc>
     <lastmod>2025-11-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://wenkai777.github.io/ArchiveOfMysteries/tags/flare/</loc>
+    <loc>http://localhost:1313/ArchiveOfMysteries/tags/git/</loc>
     <lastmod>2025-11-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://wenkai777.github.io/ArchiveOfMysteries/posts/z-flare-ctf/</loc>
+    <loc>http://localhost:1313/ArchiveOfMysteries/tags/osint/</loc>
     <lastmod>2025-11-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://wenkai777.github.io/ArchiveOfMysteries/tags/forensics/</loc>
-    <lastmod>2025-11-25T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/ArchiveOfMysteries/tags/cybersci/</loc>
+    <lastmod>2025-11-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://wenkai777.github.io/ArchiveOfMysteries/tags/git/</loc>
-    <lastmod>2025-11-25T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/ArchiveOfMysteries/posts/cybersci-ctf/</loc>
+    <lastmod>2025-11-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://wenkai777.github.io/ArchiveOfMysteries/tags/osint/</loc>
-    <lastmod>2025-11-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://wenkai777.github.io/ArchiveOfMysteries/posts/</loc>
-    <lastmod>2025-11-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://wenkai777.github.io/ArchiveOfMysteries/tags/</loc>
-    <lastmod>2025-11-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://wenkai777.github.io/ArchiveOfMysteries/tags/write-up/</loc>
-    <lastmod>2025-11-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://wenkai777.github.io/ArchiveOfMysteries/posts/z-brainfuck-ctf/</loc>
+    <loc>http://localhost:1313/ArchiveOfMysteries/posts/z-brainfuck-ctf/</loc>
     <lastmod>2025-10-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://wenkai777.github.io/ArchiveOfMysteries/tags/cryptography/</loc>
+    <loc>http://localhost:1313/ArchiveOfMysteries/tags/cryptography/</loc>
     <lastmod>2025-10-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://wenkai777.github.io/ArchiveOfMysteries/tags/hackfest/</loc>
+    <loc>http://localhost:1313/ArchiveOfMysteries/tags/hackfest/</loc>
     <lastmod>2025-10-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://wenkai777.github.io/ArchiveOfMysteries/posts/zz-chapter-1/</loc>
+    <loc>http://localhost:1313/ArchiveOfMysteries/posts/zz-chapter-1/</loc>
     <lastmod>2025-10-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://wenkai777.github.io/ArchiveOfMysteries/tags/introduction/</loc>
+    <loc>http://localhost:1313/ArchiveOfMysteries/tags/introduction/</loc>
     <lastmod>2025-10-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://wenkai777.github.io/ArchiveOfMysteries/categories/</loc>
+    <loc>http://localhost:1313/ArchiveOfMysteries/categories/</loc>
   </url><url>
-    <loc>https://wenkai777.github.io/ArchiveOfMysteries/contact/</loc>
+    <loc>http://localhost:1313/ArchiveOfMysteries/contact/</loc>
   </url>
 </urlset>

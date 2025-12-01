@@ -1,7 +1,7 @@
 +++
 date = '2025-10-03T00:00:00-00:00'
 draft = false
-title = 'Chapter 1
+title = 'Chapter 1'
 tags = ['Introduction']
 +++
 
@@ -13,7 +13,7 @@ I'm excited to start this journey, in all honesty this blog is mostly a way for 
 
 ## I, Me, yes me
 
-I go by the name of ***Kaisor***. I'm a cybersecurity enthusiast and as some might be able to tell with the subtle references all over the place, I love Lord Of The Mysteries, greatest piece of fiction to have touched earth. My interest in cybersecurity is broad, and I'm still exploring which field to dive into. One field I'd say really caught my eye would be physical pen testing, but from my conversations with experts at conferences it seems like a hard domain to get into and hard to gain **legal** experience... That being said, I'm probably more inclined towards red teaming. I plan to explore different paths and document along the way.
+I go by the name of ***wenKai***. I'm a cybersecurity enthusiast and as some might be able to tell with the subtle references all over the place, I love Lord Of The Mysteries, greatest piece of fiction to have touched earth. My interest in cybersecurity is broad, and I'm still exploring which field to dive into. One field I'd say really caught my eye would be physical pen testing, but from my conversations with experts at conferences it seems like a hard domain to get into and hard to gain **legal** experience... That being said, I'm probably more inclined towards red teaming. I plan to explore different paths and document along the way.
 
 ## What to expect
 

@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Introduction on Archive Of Mysteries</title>
-    <link>https://wenkai777.github.io/ArchiveOfMysteries/tags/introduction/</link>
+    <link>http://localhost:1313/ArchiveOfMysteries/tags/introduction/</link>
     <description>Recent content in Introduction on Archive Of Mysteries</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 03 Oct 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://wenkai777.github.io/ArchiveOfMysteries/tags/introduction/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/ArchiveOfMysteries/tags/introduction/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Chapter 1: Gambit of the fool</title>
-      <link>https://wenkai777.github.io/ArchiveOfMysteries/posts/zz-chapter-1/</link>
+      <title>Chapter 1</title>
+      <link>http://localhost:1313/ArchiveOfMysteries/posts/zz-chapter-1/</link>
       <pubDate>Fri, 03 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>https://wenkai777.github.io/ArchiveOfMysteries/posts/zz-chapter-1/</guid>
-      <description>&lt;h2 id=&#34;youve-found-me&#34;&gt;You&amp;rsquo;ve found me!&lt;/h2&gt;&#xA;&lt;p&gt;Hey there! welcome!&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;m excited to start this journey, in all honesty this blog is mostly a way for me to take initiative and finally do the things I&amp;rsquo;ve been procrascinating on. Regardless of how you&amp;rsquo;ve stumbled upon my blog, by accident or on purpose, I&amp;rsquo;m glad you are here, and I hope you enjoy the stay.&lt;/p&gt;&#xA;&lt;h2 id=&#34;i-me-yes-me&#34;&gt;I, Me, yes me&lt;/h2&gt;&#xA;&lt;p&gt;I go by the name of &lt;em&gt;&lt;strong&gt;Kaisor&lt;/strong&gt;&lt;/em&gt;. I&amp;rsquo;m a cybersecurity enthusiast and as some might be able to tell with the subtle references all over the place, I love Lord Of The Mysteries, greatest piece of fiction to have touched earth. My interest in cybersecurity is broad, and I&amp;rsquo;m still exploring which field to dive into. One field I&amp;rsquo;d say really caught my eye would be physical pen testing, but from my conversations with experts at conferences it seems like a hard domain to get into and hard to gain &lt;strong&gt;legal&lt;/strong&gt; experience&amp;hellip; That being said, I&amp;rsquo;m probably more inclined towards red teaming. I plan to explore different paths and document along the way.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/ArchiveOfMysteries/posts/zz-chapter-1/</guid>
+      <description>&lt;h2 id=&#34;youve-found-me&#34;&gt;You&amp;rsquo;ve found me!&lt;/h2&gt;&#xA;&lt;p&gt;Hey there! welcome!&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;m excited to start this journey, in all honesty this blog is mostly a way for me to take initiative and finally do the things I&amp;rsquo;ve been procrascinating on. Regardless of how you&amp;rsquo;ve stumbled upon my blog, by accident or on purpose, I&amp;rsquo;m glad you are here, and I hope you enjoy the stay.&lt;/p&gt;&#xA;&lt;h2 id=&#34;i-me-yes-me&#34;&gt;I, Me, yes me&lt;/h2&gt;&#xA;&lt;p&gt;I go by the name of &lt;em&gt;&lt;strong&gt;wenKai&lt;/strong&gt;&lt;/em&gt;. I&amp;rsquo;m a cybersecurity enthusiast and as some might be able to tell with the subtle references all over the place, I love Lord Of The Mysteries, greatest piece of fiction to have touched earth. My interest in cybersecurity is broad, and I&amp;rsquo;m still exploring which field to dive into. One field I&amp;rsquo;d say really caught my eye would be physical pen testing, but from my conversations with experts at conferences it seems like a hard domain to get into and hard to gain &lt;strong&gt;legal&lt;/strong&gt; experience&amp;hellip; That being said, I&amp;rsquo;m probably more inclined towards red teaming. I plan to explore different paths and document along the way.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

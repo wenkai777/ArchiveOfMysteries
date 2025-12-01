@@ -2,73 +2,87 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Archive Of Mysteries</title>
-    <link>https://wenkai777.github.io/ArchiveOfMysteries/tags/</link>
+    <link>http://localhost:1313/ArchiveOfMysteries/tags/</link>
     <description>Recent content in Tags on Archive Of Mysteries</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 25 Nov 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://wenkai777.github.io/ArchiveOfMysteries/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 01 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/ArchiveOfMysteries/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CTF</title>
-      <link>https://wenkai777.github.io/ArchiveOfMysteries/tags/ctf/</link>
-      <pubDate>Tue, 25 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>https://wenkai777.github.io/ArchiveOfMysteries/tags/ctf/</guid>
+      <link>http://localhost:1313/ArchiveOfMysteries/tags/ctf/</link>
+      <pubDate>Mon, 01 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ArchiveOfMysteries/tags/ctf/</guid>
       <description></description>
     </item>
     <item>
       <title>Flare</title>
-      <link>https://wenkai777.github.io/ArchiveOfMysteries/tags/flare/</link>
-      <pubDate>Tue, 25 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>https://wenkai777.github.io/ArchiveOfMysteries/tags/flare/</guid>
+      <link>http://localhost:1313/ArchiveOfMysteries/tags/flare/</link>
+      <pubDate>Mon, 01 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ArchiveOfMysteries/tags/flare/</guid>
       <description></description>
     </item>
     <item>
-      <title>Forensics</title>
-      <link>https://wenkai777.github.io/ArchiveOfMysteries/tags/forensics/</link>
-      <pubDate>Tue, 25 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>https://wenkai777.github.io/ArchiveOfMysteries/tags/forensics/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Git</title>
-      <link>https://wenkai777.github.io/ArchiveOfMysteries/tags/git/</link>
-      <pubDate>Tue, 25 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>https://wenkai777.github.io/ArchiveOfMysteries/tags/git/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>OSINT</title>
-      <link>https://wenkai777.github.io/ArchiveOfMysteries/tags/osint/</link>
-      <pubDate>Tue, 25 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>https://wenkai777.github.io/ArchiveOfMysteries/tags/osint/</guid>
+      <title>Web</title>
+      <link>http://localhost:1313/ArchiveOfMysteries/tags/web/</link>
+      <pubDate>Mon, 01 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ArchiveOfMysteries/tags/web/</guid>
       <description></description>
     </item>
     <item>
       <title>Write-Up</title>
-      <link>https://wenkai777.github.io/ArchiveOfMysteries/tags/write-up/</link>
+      <link>http://localhost:1313/ArchiveOfMysteries/tags/write-up/</link>
+      <pubDate>Mon, 01 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ArchiveOfMysteries/tags/write-up/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Forensics</title>
+      <link>http://localhost:1313/ArchiveOfMysteries/tags/forensics/</link>
       <pubDate>Tue, 25 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>https://wenkai777.github.io/ArchiveOfMysteries/tags/write-up/</guid>
+      <guid>http://localhost:1313/ArchiveOfMysteries/tags/forensics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Git</title>
+      <link>http://localhost:1313/ArchiveOfMysteries/tags/git/</link>
+      <pubDate>Tue, 25 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ArchiveOfMysteries/tags/git/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>OSINT</title>
+      <link>http://localhost:1313/ArchiveOfMysteries/tags/osint/</link>
+      <pubDate>Tue, 25 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ArchiveOfMysteries/tags/osint/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>CyberSci</title>
+      <link>http://localhost:1313/ArchiveOfMysteries/tags/cybersci/</link>
+      <pubDate>Sun, 23 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ArchiveOfMysteries/tags/cybersci/</guid>
       <description></description>
     </item>
     <item>
       <title>Cryptography</title>
-      <link>https://wenkai777.github.io/ArchiveOfMysteries/tags/cryptography/</link>
+      <link>http://localhost:1313/ArchiveOfMysteries/tags/cryptography/</link>
       <pubDate>Mon, 20 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>https://wenkai777.github.io/ArchiveOfMysteries/tags/cryptography/</guid>
+      <guid>http://localhost:1313/ArchiveOfMysteries/tags/cryptography/</guid>
       <description></description>
     </item>
     <item>
       <title>Hackfest</title>
-      <link>https://wenkai777.github.io/ArchiveOfMysteries/tags/hackfest/</link>
+      <link>http://localhost:1313/ArchiveOfMysteries/tags/hackfest/</link>
       <pubDate>Mon, 20 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>https://wenkai777.github.io/ArchiveOfMysteries/tags/hackfest/</guid>
+      <guid>http://localhost:1313/ArchiveOfMysteries/tags/hackfest/</guid>
       <description></description>
     </item>
     <item>
       <title>Introduction</title>
-      <link>https://wenkai777.github.io/ArchiveOfMysteries/tags/introduction/</link>
+      <link>http://localhost:1313/ArchiveOfMysteries/tags/introduction/</link>
       <pubDate>Fri, 03 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>https://wenkai777.github.io/ArchiveOfMysteries/tags/introduction/</guid>
+      <guid>http://localhost:1313/ArchiveOfMysteries/tags/introduction/</guid>
       <description></description>
     </item>
   </channel>

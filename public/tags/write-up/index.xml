@@ -2,25 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Write-Up on Archive Of Mysteries</title>
-    <link>https://wenkai777.github.io/ArchiveOfMysteries/tags/write-up/</link>
+    <link>http://localhost:1313/ArchiveOfMysteries/tags/write-up/</link>
     <description>Recent content in Write-Up on Archive Of Mysteries</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 25 Nov 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://wenkai777.github.io/ArchiveOfMysteries/tags/write-up/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 01 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/ArchiveOfMysteries/tags/write-up/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Flare.io CTF-2: Stat-Bearers</title>
+      <link>http://localhost:1313/ArchiveOfMysteries/posts/flare-ctf2/</link>
+      <pubDate>Mon, 01 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ArchiveOfMysteries/posts/flare-ctf2/</guid>
+      <description>&lt;p&gt;This is a write-up on Flare.io CTF&amp;rsquo; week 2 of 6.&lt;/p&gt;&#xA;&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;The challenge is titled &amp;lsquo;Stat-Bearers&amp;rsquo;, we are given a website&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://jimmyswebspace.net/&#34;&gt;http://jimmyswebspace.net/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;and the follow line&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Align your stats to claim the prize.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h3 id=&#34;recon&#34;&gt;Recon&lt;/h3&gt;&#xA;&lt;p&gt;The website is the character sheet of Sir Alaric with his stats displayed, other than that there is absolutely nothing else.&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/ArchiveOfMysteries/images/flare-25/stat-website.png&#34;&#xA;    alt=&#34;stat website&#34; width=&#34;600px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;Before continuing the quick recon, I checked the basics /robots.txt, /api, /secret, etc. unfortunately, nothing came out of it. Back to Alaric&amp;rsquo;s report card, it&amp;rsquo;s important to notice that Sir Alaric might be strong but he is &lt;strong&gt;Flagless&lt;/strong&gt;, and we don&amp;rsquo;t like that.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Flare.io CTF-1: Knights of the Stolen Session</title>
-      <link>https://wenkai777.github.io/ArchiveOfMysteries/posts/z-flare-ctf/</link>
+      <link>http://localhost:1313/ArchiveOfMysteries/posts/z-flare-ctf1/</link>
       <pubDate>Tue, 25 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>https://wenkai777.github.io/ArchiveOfMysteries/posts/z-flare-ctf/</guid>
+      <guid>http://localhost:1313/ArchiveOfMysteries/posts/z-flare-ctf1/</guid>
       <description>&lt;p&gt;Flare.io is hosting a CTF in which they release 1 challenge a week for the next 6 weeks. The theme is medieval which I love. I&amp;rsquo;m a big fan of games like &lt;em&gt;elden ring&lt;/em&gt; and &lt;em&gt;dark souls&lt;/em&gt;, in otherwords anything with knights, mages, dragons, etc. It&amp;rsquo;s a very pleasing aesthetic in my opinion. This write-up is about this week&amp;rsquo;s challenge, the first of six.&lt;/p&gt;&#xA;&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;The challenge is titled &amp;lsquo;Knights of the Stolen Session&amp;rsquo; and all that is given is a GitHub profile with one repository of a d20 simulator.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>CyberSci CTF - 3 Write-ups</title>
+      <link>http://localhost:1313/ArchiveOfMysteries/posts/cybersci-ctf/</link>
+      <pubDate>Sun, 23 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ArchiveOfMysteries/posts/cybersci-ctf/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>BrainFuck CTF - 11 Write-ups</title>
-      <link>https://wenkai777.github.io/ArchiveOfMysteries/posts/z-brainfuck-ctf/</link>
+      <link>http://localhost:1313/ArchiveOfMysteries/posts/z-brainfuck-ctf/</link>
       <pubDate>Mon, 20 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>https://wenkai777.github.io/ArchiveOfMysteries/posts/z-brainfuck-ctf/</guid>
-      <description>&lt;p&gt;At this year&amp;rsquo;s Hackfest, my teammate Marzzeau and I attempted the BrainFuck CTF, as it is described on their website it&amp;rsquo;s a serie of unconventional puzzles that requires logic, cryptography, OSINT and linguistics.&lt;/p&gt;&#xA;&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;Here are our credentials for this CTF:&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;https://wenkai777.github.io/ArchiveOfMysteries/images/bf-ctf-25/bf_scoreboard.webp&#34;&#xA;    alt=&#34;scoreboard&#34; width=&#34;600px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;See table of content to access a specific challenge faster&lt;/p&gt;&#xA;&lt;h3 id=&#34;snake&#34;&gt;Snake&lt;/h3&gt;&#xA;&lt;p&gt;Description: No information provided&lt;/p&gt;&#xA;&lt;p&gt;This was personally my favourite puzzle, on hackfest&amp;rsquo;s twitter page we found this:&lt;/p&gt;</description>
+      <guid>http://localhost:1313/ArchiveOfMysteries/posts/z-brainfuck-ctf/</guid>
+      <description>&lt;p&gt;At this year&amp;rsquo;s Hackfest, my teammate Marzzeau and I attempted the BrainFuck CTF, as it is described on their website it&amp;rsquo;s a serie of unconventional puzzles that requires logic, cryptography, OSINT and linguistics.&lt;/p&gt;&#xA;&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;Here are our credentials for this CTF:&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/ArchiveOfMysteries/images/bf-ctf-25/bf_scoreboard.webp&#34;&#xA;    alt=&#34;scoreboard&#34; width=&#34;600px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;See table of content to access a specific challenge faster&lt;/p&gt;&#xA;&lt;h3 id=&#34;snake&#34;&gt;Snake&lt;/h3&gt;&#xA;&lt;p&gt;Description: No information provided&lt;/p&gt;&#xA;&lt;p&gt;This was personally my favourite puzzle, on hackfest&amp;rsquo;s twitter page we found this:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
