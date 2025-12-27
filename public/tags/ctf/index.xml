@@ -20,13 +20,13 @@
       <link>http://localhost:1313/ArchiveOfMysteries/posts/flare-ctf4/</link>
       <pubDate>Tue, 16 Dec 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ArchiveOfMysteries/posts/flare-ctf4/</guid>
-      <description></description>
+      <description>&lt;p&gt;Flare.io CTF, Week 4 of 6. We are officially over halftime.&lt;/p&gt;&#xA;&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;The challenge is titled &amp;lsquo;Face the Unknown&amp;rsquo;, we are given the URL&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;code&gt;http://gd56337fcs4bkqtk2l3mgtnxl6hhdw7qjgxiaxx34ghbgtf3md3j3iyd.onion/ &lt;/code&gt;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;along with the hint:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Face the unkown. Name your price. Recover your treasure.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h3 id=&#34;scouting&#34;&gt;Scouting&lt;/h3&gt;&#xA;&lt;p&gt;Considering the .onion ending of the URL I opened this URL in a TOR browser. The website titled Anonfiles containes 2 listing of leaks:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Greywood Industrial Holdings&lt;/li&gt;&#xA;&lt;li&gt;Darkbed Construction &amp;amp; Co.&#xA;Both listing leads to a negotiation portal, a ransomware AI chatbot that hold the decryption key&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/ArchiveOfMysteries/images/flare-25/anonfiles.png&#34;&#xA;    alt=&#34;website look&#34; width=&#34;600px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/ArchiveOfMysteries/images/flare-25/anonfiles-listings.png&#34;&#xA;    alt=&#34;website listings&#34; width=&#34;600px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/ArchiveOfMysteries/images/flare-25/anonfiles-negotiation.png&#34;&#xA;    alt=&#34;website negotiation portal&#34; width=&#34;600px&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Flare.io CTF-3: Layer-Walkers</title>
-      <link>http://localhost:1313/ArchiveOfMysteries/posts/flare25-ctf3/</link>
+      <link>http://localhost:1313/ArchiveOfMysteries/posts/z-flare25-ctf3/</link>
       <pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ArchiveOfMysteries/posts/flare25-ctf3/</guid>
+      <guid>http://localhost:1313/ArchiveOfMysteries/posts/z-flare25-ctf3/</guid>
       <description>&lt;p&gt;This is a write-up for Flare.io CTF, Week 3 of 6. This challenge takes place during a very demanding academic period, the finals&amp;hellip; Although time was limited, I learned to work more efficiently in order to balance my responsibilities.&lt;/p&gt;&#xA;&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;The challenge is titled &amp;lsquo;Layer-Walkers&amp;rsquo;, we are given a website&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;code&gt;https://techno-plaza-2000.com/&lt;/code&gt;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;along with the hint:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;One layer opens another.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h3 id=&#34;first-glance&#34;&gt;First glance&lt;/h3&gt;&#xA;&lt;p&gt;The website in question is formatted as a forum, it contains boards and posts. Here are the 5 boards:&lt;/p&gt;</description>
     </item>
     <item>

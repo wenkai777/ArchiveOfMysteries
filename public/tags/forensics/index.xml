@@ -10,9 +10,9 @@
     <atom:link href="http://localhost:1313/ArchiveOfMysteries/tags/forensics/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Flare.io CTF-3: Layer-Walkers</title>
-      <link>http://localhost:1313/ArchiveOfMysteries/posts/flare25-ctf3/</link>
+      <link>http://localhost:1313/ArchiveOfMysteries/posts/z-flare25-ctf3/</link>
       <pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ArchiveOfMysteries/posts/flare25-ctf3/</guid>
+      <guid>http://localhost:1313/ArchiveOfMysteries/posts/z-flare25-ctf3/</guid>
       <description>&lt;p&gt;This is a write-up for Flare.io CTF, Week 3 of 6. This challenge takes place during a very demanding academic period, the finals&amp;hellip; Although time was limited, I learned to work more efficiently in order to balance my responsibilities.&lt;/p&gt;&#xA;&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;The challenge is titled &amp;lsquo;Layer-Walkers&amp;rsquo;, we are given a website&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;code&gt;https://techno-plaza-2000.com/&lt;/code&gt;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;along with the hint:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;One layer opens another.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h3 id=&#34;first-glance&#34;&gt;First glance&lt;/h3&gt;&#xA;&lt;p&gt;The website in question is formatted as a forum, it contains boards and posts. Here are the 5 boards:&lt;/p&gt;</description>
     </item>
     <item>
