@@ -11,7 +11,7 @@ This is a write-up on Flare.io CTF's week 2 of 6.
 
 The challenge is titled 'Stat-Bearers', we are given a website
 
-> https://jimmyswebspace.net/ 
+> `https://jimmyswebspace.net/`
 
 and the hint
 
